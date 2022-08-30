@@ -3,6 +3,6 @@ const inputRef = document.querySelector('#name-input');
 const spanRef = document.querySelector('#name-output');
 
 inputRef.addEventListener('input', event => {
-  const currentValue = event.currentTarget.value;
-  spanRef.textContent = currentValue === '' ? 'Anonymous' : currentValue;
+  inputedName = event.currentTarget.value;
+  spanRef.textContent = inputedName === '' ? 'Anonymous' : inputedName;
 });
