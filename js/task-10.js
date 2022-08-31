@@ -13,6 +13,8 @@ for (const tag of controlsRef.children) {
   break;
 }
 
+boxesRef.style.paddingTop = '10px';
+
 function createBoxes(amount) {
   const boxes = [];
 
@@ -21,6 +23,8 @@ function createBoxes(amount) {
     box.style.width = String(30 + 10 * i) + 'px';
     box.style.height = String(30 + 10 * i) + 'px';
     box.style.backgroundColor = getRandomHexColor();
+    box.style.marginBottom = '6px';
+    box.style.boxShadow = '3px 3px 3px 0px rgba(0,0,0,0.5)';
     boxes.push(box);
   }
 
